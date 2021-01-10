@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    url: jdbc:mysql://35.232.179.205:3306/testmanager
+#    url: jdbc:mysql://localhost:3306/med
+#    password: 123456
+    username: root
+    password: 123456
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ruhmedmanager@gmail.com
+    password: ruhmedmanagerpwd
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+debug: true
+
+twilio:
+  account_sid: AC2834c3da05e550a6da9bbde725edeb8c
+  auth_token: 860b68739db6503e4a02e95146df577e
+  trial_number: +18125068655
+
+
+
+
+example:
+  app:
+    jwtSecret: medManagerpwd
+    jwtExpirationMS: 86400000
+
